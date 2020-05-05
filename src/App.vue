@@ -1,32 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="content">
+      <info-panel></info-panel>
+      <div class="row">
+        <nav-bar class="d-inline"></nav-bar>
+        <router-view class="d-flex flex-fill"></router-view>
+      </div>
     </div>
-    <router-view/>
   </div>
 </template>
 
+<script>
+import Nav from './components/Navigation.vue'
+import InfoPanel from './components/InfoPanel'
+
+export default {
+  components: {
+    navBar: Nav,
+    infoPanel: InfoPanel
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  @import './assets/style/style.css';
+  #app{
+    max-width: 1000px;
+    margin: auto;
+  }
 </style>
