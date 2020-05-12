@@ -3,8 +3,8 @@
     <div class="content">
       <info-panel></info-panel>
       <div class="row">
-        <nav-bar class="d-inline"></nav-bar>
-        <router-view class="d-flex flex-fill"></router-view>
+        <nav-bar class="col-3 ml-auto mr-auto mb-auto"></nav-bar>
+        <router-view class="col-8"></router-view>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ export default {
 <style>
   @import './assets/style/style.css';
   #app{
-    max-width: 1000px;
+    width: 1000px;
     margin: auto;
   }
 </style>

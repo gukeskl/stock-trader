@@ -7,42 +7,16 @@
           role="tablist"
           aria-orientation="vertical"
         >
-          <a
-            class="nav-link active "
-            id="v-pills-home-tab"
-            data-toggle="pill"
-            href="#v-pills-home"
-            role="tab"
-            aria-controls="v-pills-home"
-            aria-selected="true"
-          >Trading</a>
-          <a
-            class="nav-link "
-            id="v-pills-profile-tab"
-            data-toggle="pill"
-            href="#v-pills-profile"
-            role="tab"
-            aria-controls="v-pills-profile"
-            aria-selected="false"
-          >Your Stocks</a>
-          <a
-            class="nav-link "
-            id="v-pills-messages-tab"
-            data-toggle="pill"
-            href="#v-pills-messages"
-            role="tab"
-            aria-controls="v-pills-messages"
-            aria-selected="false"
-          >History</a>
-          <a
-            class="nav-link "
-            id="v-pills-settings-tab"
-            data-toggle="pill"
-            href="#v-pills-settings"
-            role="tab"
-            aria-controls="v-pills-settings"
-            aria-selected="false"
-          >Settings</a>
+          <router-link to="/" class="nav-link" tag='a'>
+            Home</router-link>
+          <router-link to="/traiding" class="nav-link" activeClass="active" tag='a'>
+            Traiding</router-link>
+          <router-link to="/yourstocks" class="nav-link" activeClass="active" tag='a'>
+            Your Stocks</router-link>
+          <router-link to="/history" class="nav-link" activeClass="active" tag='a'>
+            History</router-link>
+          <router-link to="/settings" class="nav-link" activeClass="active" tag='a'>
+            Settings</router-link>
         </div>
       </div>
   </div>
